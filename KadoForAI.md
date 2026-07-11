@@ -2,6 +2,8 @@
 
 A practical guide for writing Kado applications. This document consolidates Kado architecture and day-to-day coding patterns. Examples match the CMS seed in this folder.
 
+For **file-by-file intention and workflow deep dives**, see [`docs/README.md`](./docs/README.md).
+
 Kado is a batteries-included Node.js framework built around one orchestrator — `Application` — and lifecycle-aware engines that plug into it.
 
 ---

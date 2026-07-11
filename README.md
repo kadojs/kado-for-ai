@@ -3,6 +3,7 @@
 MIT-licensed **Kado project seed** for humans and AI assistants. It includes:
 
 - [`KadoForAI.md`](./KadoForAI.md) — consolidated guide to writing Kado apps
+- [`docs/`](./docs/README.md) — deep-dive file annotations and workflows (intention-first for AIs)
 - A runnable **example CMS** (pages, posts, admin login) that demonstrates canonical patterns
 - Tests via `kado/lib/TestRunner` + `kado/lib/Assert`
 
@@ -62,6 +63,7 @@ Do not use SQLite as a silent fallback when MariaDB is unavailable.
 | `public/` | Static assets |
 | `test/` | TestRunner suites |
 | `KadoForAI.md` | AI/human coding guide |
+| `docs/` | Deep-dive intention, file annotations, workflows |
 
 ## Patterns demonstrated
 
@@ -75,4 +77,4 @@ Do not use SQLite as a silent fallback when MariaDB is unavailable.
 - JSON API (`GET /api/posts`) alongside HTML
 - In-process TestRunner suites
 
-Read **KadoForAI.md** before generating new Kado code.
+Read **KadoForAI.md** before generating new Kado code. For file-by-file intention and workflows, start at **[docs/README.md](./docs/README.md)**.
