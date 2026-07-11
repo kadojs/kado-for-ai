@@ -18,7 +18,7 @@ This seed is a **teaching artifact**: a small but real CMS that forces the corre
 2. **MariaDB first** — Enterprise-shaped apps should learn `Database.MySQL` / MariaDB early. SQLite is an explicit opt-in for small tools, never a silent fallback.
 3. **One concept per file** — Application wiring, feature modules, engines, and tests are separated so an AI can open one file and learn one idea.
 4. **Intention over cleverness** — Prefer obvious Kado idioms (`Application.getInstance`, `addEngine`, `Module.register`, Mustache `res.render`) over abstractions that hide the framework.
-5. **Portable MIT seed** — No host-product names, packages, or DRM. The seed’s source/docs are MIT; Kado itself remains GPL-3 as a dependency.
+5. **Portable MIT seed** — No host-product names, packages, or DRM. Seed source and docs are MIT.
 
 ## Non-goals
 

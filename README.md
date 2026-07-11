@@ -9,8 +9,6 @@ MIT-licensed **Kado project seed** for humans and AI assistants. It includes:
 
 This seed is **not** tied to any host product. Copy the folder and start building.
 
-> **Licensing:** Seed source and docs are **MIT**. The **Kado** dependency itself is **GPL-3.0** — respect that when you distribute applications that bundle or depend on Kado.
-
 ## Requirements
 
 - Node.js 16+
