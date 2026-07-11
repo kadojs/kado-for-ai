@@ -1,0 +1,26 @@
+{{>header}}
+<h1>Welcome to {{_appTitle}}</h1>
+<p>A minimal CMS seed that demonstrates Kado coding patterns.</p>
+
+{{#pages.length}}
+<section>
+  <h2>Pages</h2>
+  <ul>
+  {{#pages}}
+    <li><a href="/page/{{uri}}/">{{title}}</a></li>
+  {{/pages}}
+  </ul>
+</section>
+{{/pages.length}}
+
+{{#posts.length}}
+<section>
+  <h2>Recent posts</h2>
+  <ul>
+  {{#posts}}
+    <li><a href="/post/{{uri}}/">{{title}}</a></li>
+  {{/posts}}
+  </ul>
+</section>
+{{/posts.length}}
+{{>footer}}

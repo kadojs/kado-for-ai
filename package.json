@@ -1,0 +1,29 @@
+{
+  "name": "kado-for-ai",
+  "version": "1.0.0",
+  "description": "MIT-licensed Kado CMS seed for AI assistants and humans starting Kado projects",
+  "license": "MIT",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "TEST=test node test/index.js",
+    "db:init": "node app.js db init"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "kado": "^4.4.0",
+    "mysql2": "^3.11.0"
+  },
+  "optionalDependencies": {
+    "sqlite3": "^5.1.7"
+  },
+  "keywords": [
+    "kado",
+    "cms",
+    "seed",
+    "ai"
+  ]
+}

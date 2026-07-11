@@ -1,0 +1,22 @@
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: kado-cms-mariadb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: kado
+      MYSQL_DATABASE: kado_cms
+      MYSQL_USER: kado
+      MYSQL_PASSWORD: kado
+    ports:
+      - "3307:3306"
+    volumes:
+      - kado_cms_mariadb:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  kado_cms_mariadb:

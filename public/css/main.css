@@ -1,0 +1,68 @@
+:root {
+  --bg: #f6f3ee;
+  --ink: #1c1917;
+  --accent: #0f766e;
+  --muted: #78716c;
+  --card: #fffdf9;
+  --line: #e7e5e4;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 40%),
+    linear-gradient(180deg, #faf7f2, var(--bg));
+  min-height: 100vh;
+  line-height: 1.55;
+}
+.wrap { width: min(920px, calc(100% - 2rem)); margin: 0 auto; }
+.site-header, .site-footer {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 253, 249, 0.9);
+}
+.site-footer { border-bottom: 0; border-top: 1px solid var(--line); margin-top: 3rem; }
+.site-header .wrap, .site-footer .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.brand { font-weight: 700; font-size: 1.25rem; color: var(--ink); text-decoration: none; }
+nav a { margin-left: 1rem; color: var(--accent); text-decoration: none; }
+main.wrap { padding: 2rem 0 3rem; }
+h1, h2 { font-weight: 700; letter-spacing: -0.02em; }
+.form label { display: block; margin: 0.75rem 0; }
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input:not([type]),
+.form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  font: inherit;
+}
+button {
+  background: var(--accent);
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+table { width: 100%; border-collapse: collapse; background: var(--card); }
+th, td { text-align: left; padding: 0.6rem; border-bottom: 1px solid var(--line); }
+.notify { padding: 0.75rem 1rem; border-radius: 6px; background: #ecfdf5; }
+.notify.error { background: #fef2f2; }
+.inline { display: inline; }
+.summary, .site-footer p { color: var(--muted); }
+.content { background: var(--card); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--line); }

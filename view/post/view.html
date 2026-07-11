@@ -1,0 +1,8 @@
+{{>header}}
+<article>
+  <h1>{{post.title}}</h1>
+  {{#post.summary}}<p class="summary">{{post.summary}}</p>{{/post.summary}}
+  <div class="content">{{{post.content}}}</div>
+</article>
+<p><a href="/post/">All posts</a></p>
+{{>footer}}

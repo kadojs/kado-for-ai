@@ -1,0 +1,13 @@
+{{>header}}
+<h1>{{_pageTitle}}</h1>
+<form method="post" action="/admin/post/save/" class="form">
+  <input type="hidden" name="id" value="{{post.id}}">
+  <label>Title <input name="title" value="{{post.title}}" required></label>
+  <label>URI <input name="uri" value="{{post.uri}}" required></label>
+  <label>Summary <input name="summary" value="{{post.summary}}"></label>
+  <label>Content <textarea name="content" rows="12">{{post.content}}</textarea></label>
+  <label><input type="checkbox" name="active" {{#post.active}}checked{{/post.active}}> Active</label>
+  <button type="submit">Save</button>
+</form>
+<p><a href="/admin/post/">Back to list</a></p>
+{{>footer}}

@@ -1,0 +1,22 @@
+{{>header}}
+<h1>Pages</h1>
+<p><a href="/admin/page/edit/">New page</a> · <a href="/admin/">Dashboard</a></p>
+<table>
+  <thead><tr><th>Title</th><th>URI</th><th>Active</th><th></th></tr></thead>
+  <tbody>
+  {{#rows}}
+    <tr>
+      <td><a href="/admin/page/edit/?id={{id}}">{{title}}</a></td>
+      <td>/page/{{uri}}/</td>
+      <td>{{active}}</td>
+      <td>
+        <form method="post" action="/admin/page/delete/" class="inline">
+          <input type="hidden" name="id" value="{{id}}">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+  {{/rows}}
+  </tbody>
+</table>
+{{>footer}}
